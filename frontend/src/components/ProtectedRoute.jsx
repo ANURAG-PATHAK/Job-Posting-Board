@@ -9,6 +9,7 @@ const ProtectedRoute = ({ children }) => {
     if (loading) {
         return <Spinner animation="border" size="sm" />
     }
+    console.log(user)
     return user ? children : <Navigate to="/login" replace />;
 };
 

@@ -10,7 +10,7 @@ dotenv.config();
 const startServer = async () => {
   try {
     await connectDB();
-    const app = express();
+    const app = express()
 
     app.use(cors({
       origin: process.env.CLIENT_URL,
