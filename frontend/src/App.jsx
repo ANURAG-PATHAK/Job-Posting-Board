@@ -34,9 +34,9 @@ const App = () => {
                             <Route
                                 path="/post-job"
                                 element={
-                                    // <ProtectedRoute>
+                                    <ProtectedRoute>
                                         <JobForm />
-                                    // </ProtectedRoute>
+                                    </ProtectedRoute>
                                 }
                             />
                             <Route path="*" element={<NotFound />} />
