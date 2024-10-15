@@ -33,3 +33,7 @@ dist-ssr
 # Ignore specific environment or system config files
 .env.*
 .envrc
+
+# Ignore .env files
+.env
+**/.env
