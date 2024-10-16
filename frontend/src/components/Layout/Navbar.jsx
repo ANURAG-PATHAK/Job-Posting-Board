@@ -7,7 +7,7 @@ const CustomNavbar = () => {
     const { user, logout } = useAuth();
 
     return (
-        <Navbar bg="light" expand="lg" className="mb-4">x
+        <Navbar bg="light" expand="lg" className="mb-4">
             <Container>
                 <Navbar.Brand as={Link} to="/">
                     <Image src="logo.png" />
