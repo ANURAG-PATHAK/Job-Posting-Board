@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button, Image } from 'react-bootstrap';
 
 const CustomNavbar = () => {
     const { user, logout } = useAuth();
 
     return (
-        <Navbar bg="light" expand="lg" className="mb-4">
+        <Navbar bg="light" expand="lg" className="mb-4">x
             <Container>
-                <Navbar.Brand as={Link} to="/">Job Portal</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/">
+                    <Image src="logo.png" />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
